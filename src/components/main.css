@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b2331;
+    overflow-x: hidden;
+}
+
+.containerMain .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerMain .main .text{
+    text-align: center;
+}
+
+.containerMain .main .text h1{
+    margin: 0;
+    color: #DDE6ED;
+    font-size: 70px;
+}
+
+.containerMain .main .text h2{
+    margin: 0;
+    color: #08e4c6;
+    font-size: 50px;
+    text-shadow: 0px 5px 8px #08e4c760;
+}
+
+.containerMain .main .btn{
+    background-color: #08d9bd;
+    box-shadow: 0 5px 15px 0 #08d9bd;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.containerMain .main .btn a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #1b2331;
+    font-weight: 700;
+}
+
+.containerMain .main .btn:hover{
+    background-color: #00ffdd;
+    transition: 0.5s;
+    transform: translate(0px, -3px);
+}
+
+.btn img{
+    margin-left: 10px;
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #eee;
+    border-radius: 60px;
+    position: relative;
+    top: 300px;
+    z-index: 1;
+    overflow: hidden; }
+    .mouse::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #eee;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 1.3s infinite;
+      -webkit-animation: wheel 1.3s infinite; }
+
+.containerMain .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.containerMain .about .title{
+    text-align: center;
+    color: #08e4c6;
+    font-size: 30px;
+    text-shadow: 0px 5px 8px #08e4c760;
+}
+
+.containerMain .about .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.containerMain .about .content .text{
+    text-align: justify;
+    width: 50%;
+    color: #DDE6ED;
+    font-size: 25px;
+}
+
+.containerMain .about .content .skills{
+    display: flex;
+    flex-direction: column;
+    color: #DDE6ED;
+    width: 20%;
+}
+
+.containerMain .about .content .skills .skill--skill{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.containerMain .about .content .skills .skill--skill img{
+    background-color: #161b26;
+    padding: 0px 10px;
+    width: 70px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.projects .title{
+    text-align: center;
+    color: #08e4c6;
+    font-size: 30px;
+    margin-top: 50px;
+    text-shadow: 0px 5px 8px #08e4c760;
+}
+
+.projects .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 40%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.539);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.92);
+    transition: 0.3s;
+  }
+  
+.card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.containerCard{
+    padding: 2px 16px;
+    color: #DDE6ED;
+}
+
+
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+}
+
+.contactMe .title{
+    text-align: center;
+    color: #08e4c6;
+    font-size: 30px;
+    margin-top: 50px;
+    text-shadow: 0px 5px 8px #08e4c760;
+}
+
+.contactMe .title h1{
+    margin: 50px 0 0 0;
+}
+
+.contactMe .title h5{  
+    margin: 0 0 50px 0;
+    color: #DDE6ED;
+    font-weight: 300;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 68%;
+    border-radius: 10px;
+    background-color: #1b2331;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.539);
+    color: #DDE6ED;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 20px 50px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 24px;
+    background-color: #131923;
+    border: none;
+    color: #DDE6ED;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+textarea{
+    padding: 24px;
+    background-color: #131923;
+    border: none;
+    color: #DDE6ED;
+    font-weight: 600;
+    border-radius: 10px;
+    resize: none;
+}
+
+.containerForm button{
+    width: 25%;
+    padding: 25px 40px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: #08d9bd;
+    color: #1b2331;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px #08e4c760;
+}
+
+.containerForm button:hover{
+    transform: translateY(-5px);
+    transition: 0.7s ease;
+}
+
+
+/* ==> Animation <== */
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-300px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft{
+    animation: slideInLeft 1.3s ease;
+}
+
+@keyframes slideInRight{
+    from {
+        transform: translateX(300px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInRight{
+    animation: slideInRight 1.3s ease;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 2s ease;
+}
+
+@keyframes wheel {
+    to {
+      opacity: 0;
+      top: 27px; } }
+  
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 27px; } }

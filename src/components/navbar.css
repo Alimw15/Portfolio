@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ==> Base Style <== */
+.containerNavbar{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #171923d1;
+    position: fixed;
+    top: 0;
+    -webkit-backdrop-filter: saturate(170%) blur(20px);
+    backdrop-filter: saturate(170%) blur(20px);
+    z-index: 2;
+}
+
+.containerNavbar .logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.containerNavbar .logo a{
+    text-decoration: none;
+    color: #DDE6ED;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 40px;
+}
+
+.containerNavbar .navbar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.containerNavbar .navbar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.containerNavbar .navbar ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+.containerNavbar .navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #DDE6ED;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    justify-content: right;
+}
+
+
+.containerNavbar .navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #DDE6ED;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+}
+
+.containerNavbar .navbar ul li a:hover:after{
+    width: 100%;
+}
+
+
+/* ==> Animation <== */
+@keyframes slideInTop{
+    from {
+         transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+    
+}
+
+.slideInTop{
+    animation: slideInTop 0.7s ease;
+}
